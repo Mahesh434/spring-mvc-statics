@@ -16,7 +16,7 @@
 	<!-- Loading Statics -->
 	<mvc:annotation-driven />
 
-	<mvc:resources location="/WEB-INF/statics/"
+	<mvc:resources location="/WEB-INF/statics/dist/"
 		mapping="/**" />
 
 </beans>
