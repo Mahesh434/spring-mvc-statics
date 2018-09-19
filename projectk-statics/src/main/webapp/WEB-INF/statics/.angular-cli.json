@@ -12,7 +12,6 @@
         "assets",
         "favicon.ico"
       ],
-      "baseHref": "projectk-statics",
       "index": "index.html",
       "main": "main.ts",
       "polyfills": "polyfills.ts",
