@@ -1,4 +1,42 @@
-<p>
-  sign-in works!
-  <a routerLink="/login/sign-up">Login</a>
-</p>
+<form id="pkLoginForm" method="GET" action="login/sign-up">
+  <table class="pk-table">
+    <thead>
+      <tr>
+        <th colspan="2">
+          <div class="logo">
+            <img src="assets/logo.svg" alt="Project K">
+            <div>
+              Login in
+            </div>
+          </div>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          Username
+        </td>
+        <td>
+          <input type="text" name="username" id="pkUsername">
+        </td>
+      </tr>
+      <tr>
+        <td>Password</td>
+        <td>
+          <input type="password" name="password" id="pkPassword">
+        </td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="2">
+          <div class="actions">
+            <button class="pk-button pk-button-p" type="submit">Login</button>
+            <button class="pk-button pk-button-d" type="reset">Reset</button>
+          </div>
+        </td>
+      </tr>
+    </tfoot>
+  </table>
+</form>

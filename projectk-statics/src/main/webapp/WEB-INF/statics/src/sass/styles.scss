@@ -1,0 +1,42 @@
+@import './variables';
+@import './mixins';
+
+body {
+    font-family: $font-stack;
+    font-size: 14px;
+}
+
+.pk-table {
+    margin: 0 auto;
+    padding: $pad 2*$pad;
+    border: 1px solid $border-color;
+    border-radius: $border-radius;
+    @include box-shadow();
+    tr {
+        td {
+            padding: $pad;
+        }
+    }
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: $pad;
+    border: 1px solid $border-color;
+}
+
+.pk-button {
+    padding: $pad 2*$pad;
+    border-radius: $border-radius;
+    border: none;
+    margin: 0 $margin;
+}
+
+.pk-button-d {
+    border: 1px solid $border-color;
+}
+
+.pk-button-p {
+    background-color: $primary-color;
+    color: white;
+}
