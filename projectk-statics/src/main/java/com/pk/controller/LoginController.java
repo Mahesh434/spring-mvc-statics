@@ -7,6 +7,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class LoginController {
 	@RequestMapping(value = "/")
 	public String getLogin() {
-		return "/login.html";
+		return "/index.html";
 	}
 }

@@ -22,6 +22,7 @@
       "styles": [
         "sass/styles.scss"
       ],
+      "baseHref": "/projectk-statics/",
       "scripts": [],
       "environmentSource": "environments/environment.ts",
       "environments": {
