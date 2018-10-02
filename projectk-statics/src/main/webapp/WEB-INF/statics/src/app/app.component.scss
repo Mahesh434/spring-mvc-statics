@@ -1,0 +1,48 @@
+@import '../sass/variables';
+@import '../sass/mixins';
+
+.site-container {
+    display: flex;
+    .nav-container {
+        width: 250px;
+        background-color: $primary-background;
+        color: black;
+        @include box-shadow();
+        min-height: 100vh;
+
+        .client-logo {
+            background-color: white;
+            text-align: center;
+            img {
+                width: 100px;
+            }
+            .client-name {
+                padding: 10px;
+                font-size: 16px;
+                font-weight: bold;
+            }
+        }
+
+        .site-navigation {
+            .parent-nav {
+                color: white;
+                line-height: 20px;
+                padding: 10px;
+                font-weight: bold;
+            }
+            a {
+                text-decoration: none;
+                padding: 5px 30px;
+                display: block;
+                color: white;
+                &:hover, &.active {
+                    background-color: $secondary-background;
+                }
+            }
+        }
+    }
+
+    .site-content {
+        padding: 20px;
+    }
+}

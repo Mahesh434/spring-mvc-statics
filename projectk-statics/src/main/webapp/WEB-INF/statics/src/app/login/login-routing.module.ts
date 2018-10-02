@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { SignInComponent } from "../login/sign-in/sign-in.component";
 import { SignUpComponent } from "../login/sign-up/sign-up.component";
 import { RouterModule, Routes } from '@angular/router';
-import { patch } from 'webdriver-js-extender';
 
 const routes: Routes = [
   {

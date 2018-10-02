@@ -4,6 +4,8 @@
 body {
     font-family: $font-stack;
     font-size: 14px;
+    margin: 0;
+    padding: 0;
 }
 
 .pk-table {
@@ -20,9 +22,15 @@ body {
 }
 
 input[type="text"],
-input[type="password"] {
+input[type="password"],
+textarea {
     padding: $pad;
     border: 1px solid $border-color;
+    width: 200px;
+}
+
+textarea {
+    resize: none;
 }
 
 .pk-button {

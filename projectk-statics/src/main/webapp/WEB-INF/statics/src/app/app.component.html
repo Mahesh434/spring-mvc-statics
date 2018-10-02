@@ -1,1 +1,21 @@
-<router-outlet></router-outlet>
+<div class="site-container">
+    <div class="nav-container">
+        <div class="client-logo">
+            <img src="assets/logo.svg" alt="Logo">
+            <div class="client-name">
+                Client Name
+            </div>
+        </div>
+        <nav class="site-navigation">
+            <div class="parent-nav">Client</div>
+            <nav>
+                <a routerLink="/client/home" routerLinkActive="active">Home</a>
+                <a routerLink="/client/create" routerLinkActive="active">Create</a>
+            </nav>
+            <a class="parent-nav" routerLink="/login" routerLinkActive="active">Logout</a>
+        </nav>
+    </div>
+    <div class="site-content">
+        <router-outlet></router-outlet>
+    </div>
+</div>
